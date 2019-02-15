@@ -38,33 +38,33 @@
     <!--  UI Items to Modify -->
     
     <h1 class="mdc-typography--display1">Just a lil sum slight</h1>
-    
-     <form action="/action_page.php">
+   <button type="button" class="say something yo mdc-button mdc-button--raised"> 
 <input type="text" name="Type something yo"><br>
-</form>
+      </button>
+    <br>
     <button type="button" class="mdc-button mdc-button--raised">
       Dude! Why.
     </button>
     <br>
-     <button type="button" class="mdc-button mdc-button--raised">
+     <button type="button" class="standard mdc-button mdc-button--raised">
       Stop. Get some help.
     </button> <br>
-     <button type="button" class="mdc-button mdc-button--raised">
+     <button type="button" class="standard mdc-button mdc-button--raised">
       Thats tough
     </button> <br>
-     <button type="button" class="mdc-button mdc-button--raised">
+     <button type="button" class="standard mdc-button mdc-button--raised">
       Damn,thats crazy
     </button>
-     <button type="button" class="mdc-button mdc-button--raised">
+     <button type="button" class="standard mdc-button mdc-button--raised">
       I can't believe you've done this
     </button>
-     <button type="button" class="mdc-button mdc-button--raised">
+     <button type="button" class="standard mdc-button mdc-button--raised">
       I mean. I guess.
 </button>
-     <button type="button" class="mdc-button mdc-button--raised">
+     <button type="button" class="standard mdc-button mdc-button--raised">
       Why are you so goddamn cute?
 </button>
-     <button type="button" class="mdc-button mdc-button--raised">
+     <button type="button" class="standard mdc-button mdc-button--raised">
       No homo tho
 </button>
     
@@ -110,10 +110,12 @@
             
         // hook up event handler on the buttons
         
-         $("button").on("click", function() {
+         $("button.standard").on("click", function() {
            sayIt($(this).text());
          });
-        
+                 $("button.Type something yo").on("click", function() {
+           sayIt($("#phrase").text());
+         });
 
 
 
